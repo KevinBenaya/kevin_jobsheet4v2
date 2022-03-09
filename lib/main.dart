@@ -60,6 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
               selectedDropdown: selectedDropdown,
               listSatuanSuhu: listSatuanSuhu,
               onDropdownChanged: onDropDownChanged,
+              konversi: konversiSuhu,
             ),
             SizedBox(height: 10),
             Text(
@@ -101,12 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
             listHasil.add('Fahrenheit');
             break;
         }
-        listHasil.add("Konversi dari " +
-            retrive1.text +
-            " Celcius ke " +
-            selectedDropdown +
-            " Dengan Hasil : " +
-            calculationResult.toString());
+        listHasil.add(" :" + calculationResult.toString());
       }
     });
   }
