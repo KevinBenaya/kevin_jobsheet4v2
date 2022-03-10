@@ -79,7 +79,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             calculationHistory(
               listHasil: listHasil,
-              history: konversiSuhu,
             ),
           ],
         ),
@@ -105,7 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
             listHasil.add('Fahrenheit');
             break;
         }
-        listHasil.add(calculationResult.toString());
+        listHasil.add(': ' + calculationResult.toString());
       }
     });
   }
